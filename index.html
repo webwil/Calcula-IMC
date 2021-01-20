@@ -9,21 +9,60 @@
 <body>
 
     <section class="container">
+        <h3>Tabéla IMC:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td><b>IMC</b></td>
+                    <td><b>Resultado</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Menos do que 18,5</td>
+                    <td>Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25 e 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,9</td>
+                    <td>Obesidade grau 1</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,9</td>
+                    <td>Obesidade grau 2</td>
+                </tr>
+                <tr>
+                    <td>Mais do que 40</td>
+                    <td>Obesidade grau 3</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+        <br>
         
         <form action="/" id="formulario" method="POST">
             <fieldset>
                 <legend>Cauculo do IMC:</legend>
 
                 <label for="peso">Peso:</label>
-                <input type="number" name="peso" id="peso">
+                <input type="text" name="peso" id="peso">
 
                 <label for="altura">Altura:</label>
-                <input type="number" name="altura" id="altura">
+                <input type="text" name="altura" id="altura">
 
                 <button type="submit">Calcular</button>
             
             </fieldset>
         </form>
+
+        <div id="resultado"></div>
 
     </section>
     
